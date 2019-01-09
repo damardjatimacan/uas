@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int A[10] = {12,24,13,25,10,11,21,20,15,18}; //variabel array beserta isi elemen
+int bil, c;
+
+void cari (int bil)  //fungsi mencari no indeks
+{
+ for (c = 0; c < 10; c++)
+ { //menampilkan hasil no index yang dicari
+  if (A[c] == bil)  //pemilihan jika masukan sama dengan isi elemen
+  {
+   cout << "Bilangan yang anda cari berada di indeks ke - " << c;
+   break;
+  }
+ }
+ getch ();
+}
